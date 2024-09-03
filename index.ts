@@ -30,10 +30,6 @@ async function main() {
     console.log('get master info')
     const master = await client.getMasterchainInfo()
     console.log('master', master)
-
-    const address = Address.parse('kQC2sf_Hy34aMM7n9f9_V-ThHDehjH71LWBETy_JrTirPIHa');
-    const accountState = await client.getAccountState(address, master.last)
-    console.log('Account state:', accountState)
 }
 
 main()
