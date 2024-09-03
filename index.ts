@@ -11,11 +11,11 @@ function intToIP(int: number) {
 }
 
 let server = {
-    "ip": 1091931623,
-    "port": 17728,
+    "ip": 1097649206,
+    "port": 29296,
     "id": {
         "@type": "pub.ed25519",
-        "key": "BYSVpL7aPk0kU5CtlsIae/8mf2B/NrBi7DKmepcjX6Q="
+        "key": "p2tSiaeSqX978BxE5zLxuTQM06WVDErf5/15QToxMYA="
     }
 }
 
@@ -30,6 +30,10 @@ async function main() {
     console.log('get master info')
     const master = await client.getMasterchainInfo()
     console.log('master', master)
+
+    const address = Address.parse('kQC2sf_Hy34aMM7n9f9_V-ThHDehjH71LWBETy_JrTirPIHa');
+    const accountState = await client.getAccountState(address, master.last)
+    console.log('Account state:', accountState)
 }
 
 main()
