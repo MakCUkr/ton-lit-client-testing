@@ -28,7 +28,7 @@ async function main() {
     const engine: LiteEngine = new LiteRoundRobinEngine(engines);
     const client = new LiteClient({ engine });
     console.log('get master info')
-    const master = await client.getConfig()
+    const master = await client.getMasterchainInfo()
     console.log('master', master)
 }
 
