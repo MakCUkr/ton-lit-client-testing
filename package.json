@@ -1,0 +1,19 @@
+{
+  "name": "ton_lite_client_testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@ton/core": "^0.57.0",
+    "ton-lite-client": "^3.0.0"
+  }
+}
